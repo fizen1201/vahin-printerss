@@ -32,7 +32,7 @@ export default function ContactPage() {
           className="absolute inset-0"
           style={{
             backgroundImage:
-              'radial-gradient(circle, rgba(255,107,53,0.12) 1px, transparent 1px)',
+              'radial-gradient(circle, rgba(13,143,165,0.12) 1px, transparent 1px)',
             backgroundSize: '32px 32px',
           }}
         />

@@ -2,18 +2,18 @@
 
 @theme {
   /* Brand colors */
-  --color-navy: #0d1b2a;
-  --color-navy-900: #080f17;
-  --color-navy-800: #1a2f45;
-  --color-navy-600: #2a4a6b;
-  --color-orange: #ff6b35;
-  --color-orange-600: #e55a24;
-  --color-orange-100: #ffe8de;
-  --color-orange-50: #fff4ef;
-  --color-gold: #f7c948;
-  --color-gold-600: #d4a92a;
-  --color-gold-100: #fef9e7;
-  --color-cream: #fafaf8;
+  --color-navy: #111111;
+  --color-navy-900: #0a0a0a;
+  --color-navy-800: #1e1e1e;
+  --color-navy-600: #2d2d2d;
+  --color-orange: #0d8fa5;
+  --color-orange-600: #0a7a8e;
+  --color-orange-100: #b8e4ed;
+  --color-orange-50: #daf2f7;
+  --color-gold: #4ab0c6;
+  --color-gold-600: #3a9db5;
+  --color-gold-100: #ccedf5;
+  --color-cream: #f5fafa;
 
   /* Typography */
   --font-display: var(--font-playfair), Georgia, serif;
@@ -50,11 +50,44 @@
 @layer base {
   *:focus-visible {
     outline: none;
-    box-shadow: 0 0 0 2px #ff6b35, 0 0 0 4px white;
+    box-shadow: 0 0 0 2px #0d8fa5, 0 0 0 4px white;
   }
 
   html {
     scroll-behavior: smooth;
+  }
+
+  /* ── Dark mode ──
+     Hero/marquee/CTA sections (bg-navy, bg-orange) are never touched.
+     Only white/cream content sections flip to pure black. */
+  [data-theme="dark"] {
+    --color-cream: #111111;
+  }
+
+  [data-theme="dark"] .bg-white {
+    background-color: #111111 !important;
+  }
+
+  /* Headings & body text */
+  [data-theme="dark"] .text-navy   { color: #ffffff !important; }
+  [data-theme="dark"] .text-gray-800 { color: #f3f4f6 !important; }
+  [data-theme="dark"] .text-gray-700 { color: #e5e7eb !important; }
+  [data-theme="dark"] .text-gray-500 { color: #9ca3af !important; }
+
+  /* Decorative ghost numbers stay invisible on dark bg */
+  [data-theme="dark"] .text-gray-100 { color: rgba(255,255,255,0.04) !important; }
+
+  /* Borders */
+  [data-theme="dark"] .border-gray-100 { border-color: #2a2a2a !important; }
+  [data-theme="dark"] .border-gray-200 { border-color: #2a2a2a !important; }
+  [data-theme="dark"] .border-gray-50  { border-color: #1e1e1e !important; }
+
+  /* Icon bg pill on service cards */
+  [data-theme="dark"] .bg-orange-50 { background-color: rgba(13,143,165,0.15) !important; }
+
+  /* text-stroke-navy becomes invisible on black bg — flip to white */
+  [data-theme="dark"] .text-stroke-navy {
+    -webkit-text-stroke-color: #ffffff !important;
   }
 }
 
@@ -76,7 +109,7 @@
   }
 
   .text-stroke-orange {
-    -webkit-text-stroke: 2px #ff6b35;
+    -webkit-text-stroke: 2px #0d8fa5;
     color: transparent;
   }
 
@@ -86,7 +119,7 @@
   }
 
   .text-stroke-navy {
-    -webkit-text-stroke: 2px #0d1b2a;
+    -webkit-text-stroke: 2px #111111;
     color: transparent;
   }
 

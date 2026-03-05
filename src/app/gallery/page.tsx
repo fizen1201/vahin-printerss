@@ -81,13 +81,13 @@ function FeaturedCard({ item, onClick }: { item: GalleryItem; onClick: () => voi
     <button
       onClick={onClick}
       className="group relative w-full aspect-[4/5] overflow-hidden rounded-2xl bg-navy-800 cursor-zoom-in focus:outline-none focus:ring-2 focus:ring-orange"
-      style={{ backgroundColor: '#1a2f45' }}
+      style={{ backgroundColor: '#1e1e1e' }}
       aria-label={`View ${item.title}`}
     >
       {imgError ? (
         /* ── Elegant placeholder ── */
         <div className="absolute inset-0 flex flex-col items-center justify-center gap-5"
-          style={{ background: 'linear-gradient(135deg, #1a2f45 0%, #0d1b2a 100%)' }}>
+          style={{ background: 'linear-gradient(135deg, #1e1e1e 0%, #111111 100%)' }}>
           <div className="w-20 h-20 rounded-2xl bg-orange/10 border border-orange/20 flex items-center justify-center">
             <Printer className="w-10 h-10 text-orange/50" />
           </div>
@@ -197,7 +197,7 @@ export default function GalleryPage() {
           className="absolute inset-0"
           style={{
             backgroundImage:
-              'radial-gradient(circle, rgba(255,107,53,0.12) 1px, transparent 1px)',
+              'radial-gradient(circle, rgba(13,143,165,0.12) 1px, transparent 1px)',
             backgroundSize: '32px 32px',
           }}
         />
@@ -241,7 +241,7 @@ export default function GalleryPage() {
       </section>
 
       {/* Featured Works */}
-      <section className="py-24 px-4 bg-navy-900" style={{ background: '#080f17' }}>
+      <section className="py-24 px-4 bg-navy-900" style={{ background: '#0a0a0a' }}>
         <div className="max-w-7xl mx-auto">
           <div className="flex items-end gap-6 mb-12">
             <div>

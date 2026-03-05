@@ -5,6 +5,7 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { Menu, X, MessageCircle } from 'lucide-react'
 import { Logo } from '@/components/ui/Logo'
+import { ThemeToggle } from '@/components/ui/ThemeToggle'
 import { WHATSAPP_URL } from '@/lib/constants'
 
 const navLinks = [
@@ -58,6 +59,9 @@ export function Navbar() {
             </li>
           ))}
         </ul>
+
+        {/* Theme toggle */}
+        <ThemeToggle />
 
         {/* Desktop WhatsApp CTA */}
         <a

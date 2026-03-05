@@ -54,7 +54,7 @@ export default function ServicesPage() {
           className="absolute inset-0"
           style={{
             backgroundImage:
-              'radial-gradient(circle, rgba(255,107,53,0.12) 1px, transparent 1px)',
+              'radial-gradient(circle, rgba(13,143,165,0.12) 1px, transparent 1px)',
             backgroundSize: '32px 32px',
           }}
         />
@@ -172,7 +172,7 @@ export default function ServicesPage() {
                   className="font-display font-black leading-none mb-4 mx-auto"
                   style={{
                     fontSize: 'clamp(3rem, 7vw, 5rem)',
-                    WebkitTextStroke: '2px #ff6b35',
+                    WebkitTextStroke: '2px #0d8fa5',
                     color: 'transparent',
                   }}
                 >

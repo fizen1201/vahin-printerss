@@ -26,7 +26,7 @@ const iconMap: Record<string, React.ElementType> = {
 
 const stats = [
   { number: '200+', label: 'Projects Delivered' },
-  { number: '15+', label: 'Years of Excellence' },
+  { number: '25+', label: 'Years of Excellence' },
   { number: '50+', label: 'Trusted Clients' },
   { number: '100%', label: 'Quality Assured' },
 ]
@@ -62,22 +62,22 @@ export default function Home() {
 
         {/* Large orange glow — top right */}
         <div className="absolute -top-48 -right-48 w-[700px] h-[700px] rounded-full"
-          style={{ background: 'radial-gradient(circle, rgba(255,107,53,0.3) 0%, transparent 70%)' }} />
+          style={{ background: 'radial-gradient(circle, rgba(13,143,165,0.3) 0%, transparent 70%)' }} />
 
         {/* Gold glow — bottom left */}
         <div className="absolute -bottom-64 -left-32 w-[500px] h-[500px] rounded-full"
-          style={{ background: 'radial-gradient(circle, rgba(247,201,72,0.15) 0%, transparent 70%)' }} />
+          style={{ background: 'radial-gradient(circle, rgba(125,214,230,0.15) 0%, transparent 70%)' }} />
 
         {/* Decorative floating shapes — right side */}
         <div className="absolute right-8 top-1/2 -translate-y-1/2 hidden xl:flex flex-col gap-5 items-end">
           {/* Stack of printed sheets effect */}
           <div className="animate-float">
             <div className="w-56 h-72 rounded-2xl rotate-6 opacity-20 border-2 border-orange"
-              style={{ background: 'linear-gradient(135deg, rgba(255,107,53,0.1), transparent)' }} />
+              style={{ background: 'linear-gradient(135deg, rgba(13,143,165,0.1), transparent)' }} />
           </div>
           <div className="animate-float-delayed -mt-48 mr-8">
             <div className="w-40 h-52 rounded-2xl -rotate-3 opacity-30 border border-gold"
-              style={{ background: 'linear-gradient(135deg, rgba(247,201,72,0.15), transparent)' }} />
+              style={{ background: 'linear-gradient(135deg, rgba(125,214,230,0.15), transparent)' }} />
           </div>
           <div className="-mt-36 mr-4">
             <div className="w-32 h-40 rounded-xl rotate-12 opacity-15 bg-white" />
@@ -127,7 +127,7 @@ export default function Home() {
           {/* CTAs */}
           <div className="flex flex-wrap gap-4">
             <Link href="/gallery"
-              className="group inline-flex items-center gap-3 bg-orange text-white px-8 py-4 rounded-full font-semibold text-sm hover:bg-orange-600 transition-all duration-300 hover:shadow-[0_0_40px_rgba(255,107,53,0.4)]">
+              className="group inline-flex items-center gap-3 bg-orange text-white px-8 py-4 rounded-full font-semibold text-sm hover:bg-orange-600 transition-all duration-300 hover:shadow-[0_0_40px_rgba(13,143,165,0.4)]">
               View Our Work
               <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </Link>
@@ -181,7 +181,7 @@ export default function Home() {
               <h2 className="font-display text-5xl font-bold text-navy leading-tight mb-6">
                 Every print,
                 <br />
-                <span className="text-stroke-navy" style={{ WebkitTextStroke: '2px #0d1b2a', color: 'transparent' }}>
+                <span className="text-stroke-navy">
                   perfected.
                 </span>
               </h2>
@@ -235,7 +235,7 @@ export default function Home() {
       <section className="relative bg-navy py-24 px-4 overflow-hidden">
         {/* Background accent */}
         <div className="absolute right-0 top-0 h-full w-1/3 opacity-5"
-          style={{ background: 'linear-gradient(to left, #FF6B35, transparent)' }} />
+          style={{ background: 'linear-gradient(to left, #0d8fa5, transparent)' }} />
         <div className="absolute bottom-0 left-0 right-0 h-px bg-white/5" />
 
         <div className="relative max-w-7xl mx-auto">
@@ -330,9 +330,9 @@ export default function Home() {
           GALLERY TEASER — Dark section with visual cards
       ══════════════════════════════════════════════════════════════ */}
       <section className="py-24 px-4 bg-navy-900 relative overflow-hidden"
-        style={{ backgroundColor: '#080f17' }}>
+        style={{ backgroundColor: '#0a0a0a' }}>
         <div className="absolute inset-0 opacity-[0.04]"
-          style={{ backgroundImage: 'radial-gradient(#FF6B35 1px, transparent 1px)', backgroundSize: '40px 40px' }} />
+          style={{ backgroundImage: 'radial-gradient(#0d8fa5 1px, transparent 1px)', backgroundSize: '40px 40px' }} />
 
         <div className="relative max-w-7xl mx-auto">
           <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-12">
@@ -355,8 +355,8 @@ export default function Home() {
           {/* Gallery preview cards — visual placeholders */}
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
             {[
-              { label: 'Catalogues', gradient: 'from-orange/40 to-navy', accent: '#FF6B35' },
-              { label: 'Paper Bags', gradient: 'from-gold/30 to-navy', accent: '#F7C948' },
+              { label: 'Catalogues', gradient: 'from-orange/40 to-navy', accent: '#0d8fa5' },
+              { label: 'Paper Bags', gradient: 'from-gold/30 to-navy', accent: '#7dd6e6' },
               { label: 'Magazines & Books', gradient: 'from-purple-400/20 to-navy', accent: '#a78bfa' },
             ].map(({ label, gradient, accent }) => (
               <Link href="/gallery" key={label}
@@ -400,7 +400,7 @@ export default function Home() {
         <div className="absolute top-0 right-0 w-96 h-96 rounded-full opacity-20"
           style={{ background: 'radial-gradient(circle, white 0%, transparent 70%)' }} />
         <div className="absolute bottom-0 left-0 w-64 h-64 rounded-full opacity-10"
-          style={{ background: 'radial-gradient(circle, #0d1b2a 0%, transparent 70%)' }} />
+          style={{ background: 'radial-gradient(circle, #111111 0%, transparent 70%)' }} />
 
         <div className="relative max-w-4xl mx-auto text-center">
           <p className="text-white/70 font-medium uppercase tracking-[0.2em] text-xs mb-4">

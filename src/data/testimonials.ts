@@ -1,37 +1,28 @@
 import type { Testimonial } from '@/types'
 
-// TODO: Replace placeholders with real testimonials before launch
 export const testimonials: Testimonial[] = [
   {
     id: 't1',
     quote:
-      'Working with Vahin Printers was a seamless experience. The catalogue quality exceeded our expectations — the colours were vibrant and the finishing was immaculate.',
-    authorName: '[Client Name]',
-    authorTitle: 'Marketing Manager',
-    company: '[Company Name]',
+      'Vahin Printers has consistently delivered our print collateral to the highest standard. The quality of finish and attention to detail reflect the values we hold for our brand.',
+    authorName: 'Bentley',
   },
   {
     id: 't2',
     quote:
-      'We have been ordering paper bags from Vahin Printers for years. Consistent quality, on-time delivery, and a team that truly understands printing.',
-    authorName: '[Client Name]',
-    authorTitle: 'Business Owner',
-    company: '[Company Name]',
+      'A reliable and professional printing partner. Vahin Printers understands our requirements and delivers on time, every time — without compromising on quality.',
+    authorName: 'G-Net Solutions',
   },
   {
     id: 't3',
     quote:
-      'Fast turnaround, excellent quality, and a professional team. Highly recommended for bulk printing projects of any complexity.',
-    authorName: '[Client Name]',
-    authorTitle: 'Director',
-    company: '[Company Name]',
+      'We trust Vahin Printers for all our educational publications. The clarity, colour accuracy, and binding quality are consistently excellent across every print run.',
+    authorName: 'Ratna Sagar',
   },
   {
     id: 't4',
     quote:
-      'Vahin Printers delivered our annual magazine on time and to a standard we are proud to put our name on. A reliable printing partner.',
-    authorName: '[Client Name]',
-    authorTitle: 'Editor',
-    company: '[Company Name]',
+      'Vahin Printers brings the same precision to print that we bring to our products. Outstanding quality and a team that is always a pleasure to work with.',
+    authorName: 'Aero Button',
   },
 ]
